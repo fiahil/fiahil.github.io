@@ -4,21 +4,56 @@ html, body {
     width: 100%;
     margin: 0px;
     overflow: hidden;
-}
-
-h1 {
-    margin: 2%;
-    font-family: 'Quicksand', sans-serif;
-}
-
-p {
-    margin: 2%;
     font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.container {
+    margin: 1.2em;
+}
+
+.container h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.external {
+    margin: 2em 0em 0em 0em;
+    padding: 0.8em 1.6em;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.31);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+
+    border-style: solid;
+    border-width: 0px 1px 3px 1px;
+    border-color: rgba(0, 0, 0, 0.22);
+}
+
+.external ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.external a, i {
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+}
+
+.external a:hover {
+    text-decoration: underline;
 }
 
 .cactus {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    z-index: -10;
     background-image: url("/img/cactus.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,13 +66,16 @@ p {
 
 @media (orientation: landscape) {
     .cactus {
-        z-index: -10;
-        position: absolute;
         top: 0;
+        left: 0;
     }
 
-    h1, p {
-        color: white;
-        text-shadow: black 1px 2px;
+    .external {
+        display: inline-block;
+    }
+
+    h1 {
+        color: rgb(241, 241, 241);
+        text-shadow: rgb(17, 17, 17) 1px 2px;
     }
 }
