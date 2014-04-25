@@ -16,6 +16,7 @@ html, body {
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
     margin: 0;
+    font-size: 1.4em;
 }
 
 .external {
@@ -51,7 +52,7 @@ html, body {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 4em;
+    top: 3.6em;
     left: 0;
     z-index: -10;
     background-image: url("/img/cactus.jpg");
@@ -62,6 +63,16 @@ html, body {
     -webkit-box-shadow: inset 0px 0px 25px 0px rgba(33, 33, 33, 0.6);
     -moz-box-shadow: inset 0px 0px 25px 0px rgba(33, 33, 33, 0.6);
     box-shadow: inset 0px 0px 25px 0px rgba(33, 33, 33, 0.6);
+}
+
+@media (min-width: 420px) {
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .cactus {
+        top: 4em;
+    }
 }
 
 @media (orientation: landscape) {
