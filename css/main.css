@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0px;
-    overflow: scroll;
+    overflow: overlay;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
 }
@@ -90,5 +90,6 @@ html, body {
         display: block;
         float: left;
         margin-left: 180px;
+        margin-bottom: 1.2em;
     }
 }
