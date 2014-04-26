@@ -21,7 +21,14 @@ html, body {
     text-shadow: rgb(17, 17, 17) 1px 2px;
 }
 
-.external {
+.container h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    color: rgb(241, 241, 241);
+}
+
+.external, .main {
     margin: 2em 0em 0em 0em;
     padding: 0.8em 1.6em;
     display: block;
@@ -41,7 +48,7 @@ html, body {
     padding: 0;
 }
 
-.external a, i {
+.external a, .external i, .main p {
     color: rgb(241, 241, 241);
     text-decoration: none;
 }
@@ -73,8 +80,15 @@ html, body {
     }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 480px) {
     .external {
-        display: inline-block;
+        width: 90px;
+        position: fixed;
+    }
+
+    .main {
+        display: block;
+        float: left;
+        margin-left: 180px;
     }
 }
