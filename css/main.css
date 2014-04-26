@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0px;
-    overflow: overlay;
+    overflow: hidden;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
 }
@@ -81,6 +81,10 @@ html, body {
 }
 
 @media (orientation: landscape) and (min-width: 480px) {
+    html, body {
+        overflow: overlay;
+    }
+
     .external {
         width: 90px;
         position: fixed;
@@ -90,5 +94,6 @@ html, body {
         display: block;
         float: left;
         margin-left: 180px;
+        margin-bottom: 1.2em;
     }
 }
