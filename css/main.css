@@ -83,6 +83,7 @@ html, body {
 @media (orientation: landscape) and (min-width: 480px) {
     html, body {
         overflow: overlay;
+        -webkit-overflow-scrolling: touch;
     }
 
     .external {
