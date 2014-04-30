@@ -3,7 +3,8 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0px;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
 }
@@ -48,12 +49,12 @@ html, body {
     padding: 0;
 }
 
-.external a, .external i, .main p {
+.external a, .external i, .main p, .main a {
     color: rgb(241, 241, 241);
     text-decoration: none;
 }
 
-.external a:hover {
+.external a:hover, .main a:hover {
     text-decoration: underline;
 }
 
