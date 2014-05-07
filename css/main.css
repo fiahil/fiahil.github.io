@@ -33,14 +33,14 @@ html, body {
     margin: 2em 0em 0em 0em;
     padding: 0.8em 1.6em;
     display: block;
-    background-color: rgba(41, 41, 41, 1);
+    background-color: rgba(0, 0, 0, 0.31);
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
 
     border-style: solid;
     border-width: 0px 1px 3px 1px;
-    border-color: rgba(10, 10, 10, 1);
+    border-color: rgba(0, 0, 0, 0.22);
 }
 
 .external ul {
@@ -85,11 +85,6 @@ html, body {
     html, body {
         overflow-y: scroll;
         overflow-x: hidden;
-    }
-
-    .external, .main {
-        background-color: rgba(0, 0, 0, 0.31);
-        border-color: rgba(0, 0, 0, 0.22);
     }
 
     .external {
