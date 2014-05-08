@@ -49,9 +49,13 @@ html, body {
     padding: 0;
 }
 
-.external a, .external i, .main p, .main a {
+.external a, .external i, .external ul li, .main p, .main a {
     color: rgb(241, 241, 241);
     text-decoration: none;
+}
+
+.divider {
+    height: 2.6em;
 }
 
 .external a:hover, .main a:hover {
